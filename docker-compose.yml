@@ -1,0 +1,31 @@
+services:
+  all_scrapers:
+    build: .
+    image: scraper-app-image
+    container_name: scraper_full
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    command: python main.py --all
+
+  imdb:
+    image: scraper-app-image
+    container_name: scraper_imdb
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    command: python main.py --imdb
+
+  quotes:
+    image: scraper-app-image
+    container_name: scraper_quotes
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    command: python main.py --quotes

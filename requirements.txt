@@ -1,0 +1,6 @@
+ruff
+requests
+beautifulsoup4
+python-decouple
+selenium==3.141.0
+urllib3<2.0.0
