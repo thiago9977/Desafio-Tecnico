@@ -240,14 +240,14 @@
     {
         "title": [
             "#35",
-            "Psicose"
+            "Túmulo dos Vagalumes"
         ],
         "rating": "8,5"
     },
     {
         "title": [
             "#36",
-            "Túmulo dos Vagalumes"
+            "Psicose"
         ],
         "rating": "8,5"
     },
@@ -681,14 +681,14 @@
     {
         "title": [
             "#98",
-            "Se Meu Apartamento Falasse"
+            "Lawrence da Arábia"
         ],
         "rating": "8,3"
     },
     {
         "title": [
             "#99",
-            "Lawrence da Arábia"
+            "Se Meu Apartamento Falasse"
         ],
         "rating": "8,3"
     },
@@ -870,16 +870,16 @@
     {
         "title": [
             "#125",
-            "Dangal"
+            "Ladrões de Bicicletas"
         ],
-        "rating": "8,3"
+        "rating": "8,2"
     },
     {
         "title": [
             "#126",
-            "Ladrões de Bicicletas"
+            "Dangal"
         ],
-        "rating": "8,2"
+        "rating": "8,3"
     },
     {
         "title": [
@@ -1115,16 +1115,16 @@
     {
         "title": [
             "#160",
-            "A Turma do Caos: Reprovou Na Classe"
+            "Monty Python em Busca do Cálice Sagrado"
         ],
-        "rating": "8,5"
+        "rating": "8,2"
     },
     {
         "title": [
             "#161",
-            "Monty Python em Busca do Cálice Sagrado"
+            "A Turma do Caos: Reprovou Na Classe"
         ],
-        "rating": "8,2"
+        "rating": "8,5"
     },
     {
         "title": [
@@ -1150,16 +1150,16 @@
     {
         "title": [
             "#165",
-            "O Segredo dos Seus Olhos"
+            "Demon Slayer: Kimetsu no Yaiba - Castelo Infinito"
         ],
-        "rating": "8,2"
+        "rating": "8,4"
     },
     {
         "title": [
             "#166",
-            "Demon Slayer: Kimetsu no Yaiba - Castelo Infinito"
+            "O Segredo dos Seus Olhos"
         ],
-        "rating": "8,4"
+        "rating": "8,2"
     },
     {
         "title": [
@@ -1542,30 +1542,30 @@
     {
         "title": [
             "#221",
-            "O Mistério da Lixeira"
-        ],
-        "rating": "8,3"
-    },
-    {
-        "title": [
-            "#222",
             "Jai Bhim"
         ],
         "rating": "8,6"
     },
     {
         "title": [
-            "#223",
-            "A Voz do Silêncio"
+            "#222",
+            "O Mistério da Lixeira"
         ],
-        "rating": "8,2"
+        "rating": "8,3"
+    },
+    {
+        "title": [
+            "#223",
+            "A Noviça Rebelde"
+        ],
+        "rating": "8,1"
     },
     {
         "title": [
             "#224",
-            "A Noviça Rebelde"
+            "A Voz do Silêncio"
         ],
-        "rating": "8,1"
+        "rating": "8,2"
     },
     {
         "title": [
@@ -1731,22 +1731,22 @@
     {
         "title": [
             "#248",
-            "As Vinhas da Ira"
-        ],
-        "rating": "8,1"
-    },
-    {
-        "title": [
-            "#249",
             "A Chantagem"
         ],
         "rating": "8,2"
     },
     {
         "title": [
-            "#250",
-            "Troca Surpresa"
+            "#249",
+            "As Vinhas da Ira"
         ],
-        "rating": "8,3"
+        "rating": "8,1"
+    },
+    {
+        "title": [
+            "#250",
+            "96"
+        ],
+        "rating": "8,5"
     }
 ]

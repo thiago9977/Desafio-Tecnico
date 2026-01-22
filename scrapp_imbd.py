@@ -1,7 +1,8 @@
 import json
 import logging
-from typing import Dict, List
 import time
+from typing import Dict, List
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -32,9 +33,7 @@ class WebDriverFactory:
         options.add_argument('--headless')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
-        options.add_argument(
-            '--log-level=3'
-        )
+        options.add_argument('--log-level=3')
         options.add_argument('--silent')
         options.add_argument('--window-size=1920,1080')
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -44,13 +43,17 @@ class WebDriverFactory:
             'Chrome/119.0.0.0 Safari/537.36'
         )
         options.add_argument(f'user-agent={user_agent}')
+        if os.name == 'nt':
+            driver_path = settings.CHROME_PATH 
+            logger.info(f"Executando localmente no Windows. Path: {driver_path}")
+        else:
+            driver_path = '/usr/local/bin/chromedriver'
+            logger.info("Executando dentro do Docker (Linux).")
 
         if settings.PROXY_ENABLE and settings.PROXY:
             options.add_argument(f'--proxy-server={settings.PROXY}')
-        
-        return webdriver.Chrome( 
-            options=options
-        )
+
+        return webdriver.Chrome(options=options, executable_path=driver_path)
 
 
 class IMDbParser:
@@ -113,7 +116,7 @@ class IMDbScraper:
 
         try:
             self.driver.get(url)
-            time.sleep(2)
+            time.sleep(3.5)
             movie_containers = self.wait.until(
                 EC.presence_of_all_elements_located(
                     (By.CLASS_NAME, 'ipc-metadata-list-summary-item')
