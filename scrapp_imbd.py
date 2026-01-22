@@ -1,8 +1,9 @@
 import json
 import logging
+import os
 import time
 from typing import Dict, List
-import os
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -44,11 +45,11 @@ class WebDriverFactory:
         )
         options.add_argument(f'user-agent={user_agent}')
         if os.name == 'nt':
-            driver_path = settings.CHROME_PATH 
-            logger.info(f"Executando localmente no Windows. Path: {driver_path}")
+            driver_path = settings.CHROME_PATH
+            logger.info(f'Executando no Windows. Path: {driver_path}')
         else:
             driver_path = '/usr/local/bin/chromedriver'
-            logger.info("Executando dentro do Docker (Linux).")
+            logger.info('Executando dentro do Docker (Linux).')
 
         if settings.PROXY_ENABLE and settings.PROXY:
             options.add_argument(f'--proxy-server={settings.PROXY}')
